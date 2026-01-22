@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Create</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/pawicon" alt="Callery" class="brand-logo">
+                <span class="brand-name">CALLERY</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="messages.html">Messages</a>
+                <a href="updates.html">Updates</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Create New Photo Post</h1>
+        <form class="create-form" method="post" enctype="multipart/form-data">
+            <label for="photo-title">Photo Title:
+                <input type="text" id="photo-title" name="photo-title" required>
+            </label><br>
+            <label for="photo-upload">Upload Photo:
+                <input type="file" id="photo-upload" name="photo-upload" accept="image/*" required>
+            </label><br>
+            <label for="photo-description">Description:
+                <textarea id="photo-description" name="photo-description" rows="4" required></textarea>
+            </label><br>
+            <button type="submit" class="btn primary">Submit</button>
+        </form>
+
+</body>
+</html>

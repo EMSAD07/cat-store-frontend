@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/pawicon" alt="Callery" class="brand-logo">
+                <span class="brand-name">CALLERY</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="create.html">Create</a>
+                <a href="messages.html">Messages</a>
+                <a href="updates.html">Updates</a>
+            </nav>
+        </div>
+    </header>
+            <h1>Create Account</h1>
+    <p>Join us today! It takes less than a minute.</p>
+    <form class="reg-form" method="get">
+        <div  class="reg-body">
+        <label for="firstname">First name: 
+            <input type="text" id="Firstname" required>
+        </label><br>
+        <label for="lastname">Last name: 
+            <input type="text" id="lastname" required>
+        </label><br>
+
+         <label for="email">Email adress: </label>
+            <input type="email" id="email" required>
+        </label><br>
+        <label for="dob">Date of Birth: 
+            <input type="date" id="dob" required>
+        </label><br>
+        <label for="password">Password: 
+            <input type="password" id="password" required>
+        </label><br>
+        <label for="gender">Gender:<br>  
+            <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select></label>   
+            <button type="submit" class="btn-primary">Sign-Up</button><br><br>
+    </div>
+    </form>
+    <div class="form-footer">
+        <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
+
+</body>
+</html>
