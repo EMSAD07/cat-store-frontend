@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Callery — Cat Photo Gallery</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/pawicon" alt="Callery" class="brand-logo">
+                <span class="brand-name">CALLERY</span>
+            </a>
+            <nav class="nav">
+                <a href="create.html">Create</a>
+                <a href="messages.html">Messages</a>
+                <a href="updates.html">Updates</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Beautiful Cat Photos, Curated</h1>
+                    <p>Discover, save, and share the cutest cat photos. A tiny gallery built for cat lovers.</p>
+                    <p class="hero-cta">
+                        <a class="btn primary" href="signup.html">Get Started</a>
+                        <a class="btn ghost" href="updates.html">Explore</a>
+                    </p>
+                </div>
+                <div class="hero-media">
+                    <img src="images/catcute.jpg" alt="Cute cat" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="features container">
+            <div class="feature">
+                <h3>Curated Picks</h3>
+                <p>Hand-selected photos you’ll love.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy Uploads</h3>
+                <p>Share your favorites in seconds.</p>
+            </div>
+            <div class="feature">
+                <h3>Responsive</h3>
+                <p>Looks great on mobile and desktop.</p>
+            </div>
+        </section>
+
+        <section class="gallery container">
+            <h2>Latest Photos</h2>
+            <div class="grid">
+                <img src="images/catyawn.jpg" alt="Yawning cat">
+                <img src="images/catfluf.jpg" alt="Fluffy cat">
+                <img src="images/catharry.jpg" alt="Harry cat">
+                <img src="images/catsunset.jpg" alt="Cat at sunset">
+            </div>
+            <p class="more"><a href="https://www.pinterest.com/search/pins/?q=cat%20cute%20photos&rs=typed">More Photos →</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> CALLERY — Made with paws and ❤️</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
