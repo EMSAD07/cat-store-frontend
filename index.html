@@ -56,12 +56,34 @@
 
         <section class="gallery container">
             <h2>Latest Photos</h2>
-            <div class="grid">
-                <img src="images/catyawn.jpg" alt="Yawning cat">
-                <img src="images/catfluf.jpg" alt="Fluffy cat">
-                <img src="images/catharry.jpg" alt="Harry cat">
-                <img src="images/catsunset.jpg" alt="Cat at sunset">
+            
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/catyawn.jpg" alt="Yawning cat">
+                </div>
+                <div class="slide fade">
+                    <img src="images/catfluf.jpg" alt="Fluffy cat">
+                </div>
+                <div class="slide fade">
+                    <img src="images/catharry.jpg" alt="Harry cat">
+                </div>
+                <div class="slide fade">
+                    <img src="images/catsunset.jpg" alt="Cat at sunset">
+                </div>
+                
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
+            
+            <!-- Dot indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
             <p class="more"><a href="https://www.pinterest.com/search/pins/?q=cat%20cute%20photos&rs=typed">More Photos →</a></p>
         </section>
     </main>
