@@ -231,3 +231,13 @@ button:hover{
     background-color: #ddd;
 }
 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #ff6b6b;
+}
+[data-theme="dark"] {
+  --bg-color: #151414;
+  --text-color: #ffffff;
+  --accent-color: #ff6b6b;
+}
